@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>IPv6, but no ports | frankrank blog</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="frankrank blog"><meta name="msapplication-starturl" content="http://example.com"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="frankrank blog"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="IPv6, but no ports | frankrank blog"><meta property="og:site_name" content="frankrank blog"><meta property="og:type" content="article"><meta property="og:url" content="http://example.com/2023/09/10/IPv6-but-no-ports/"><meta property="og:locale" content="en"><meta name="description" content="我整了一段时间才整到IPv6。后面我才发现这玩意对我没用啊？ - John Doe - frankrank blog"><meta property="article:published_time" content="2023-09-10T02:11:17.000Z"><meta property="article:modified_time" content="2023-09-10T02:11:48.999Z"><meta property="og:updated_time" content="2023-09-10T02:11:48.999Z"><meta property="article:author" content="John Doe"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://example.com/2023/09/10/IPv6-but-no-ports/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "http://example.com/2023/09/10/IPv6-but-no-ports/",
+    "@type": "BlogPosting",
+    "logo": "http://example.com/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://example.com/2023/09/10/IPv6-but-no-ports/"
+    },
+    "headline": "IPv6, but no ports | frankrank blog",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://example.com/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2023-09-10T02:11:17.000Z",
+    "dateModified": "2023-09-10T02:11:48.999Z",
+    "author": {
+        "@type": "Person",
+        "name": "John Doe",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://example.com/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "frankrank blog",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://example.com/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://example.com/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "",
+    "description": "我整了一段时间才整到IPv6。后面我才发现这玩意对我没用啊？ - John Doe - frankrank blog"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">frankrank blog</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=frankrank blog&url=http://example.com&pic=http://example.com/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=frankrank blog&url=http://example.com&via=John Doe" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://example.com" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://example.com&title=IPv6, but no ports" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=frankrank blog&title=IPv6, but no ports&summary=&pics=http://example.com/img/suka-favicon.ico&url=http://example.com" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://example.com&text=IPv6, but no ports" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAABzklEQVR42u3awZLCIBBF0fz/T+tqqqYs6XeJWUBzs7FmVDiLNoTXXK8Fr0uUKFGivqCu4hp++eO9v79Hr3QeUX1QaeJq8GqMEXA4j6hWqNFEn/9LnxkB0hiizkKN3v92k01QUaKqRZTcYEWdiyILKYVWP4BHnhJELY8ixfzE62O7GVFLo2LoMBqgeLAjG9qfUhdRS6OqQkyhBlmk6fii+qDIxGRhJaFZ/PGIaoO6G4rNFngK0UT1QlVFWU1GNhvVYl0WuqitUdXDXWoUpSYSCTdE9UGlgIsGGySIHY0jqhcqFSUt6hS8ph+KqD6oUZBKgg8a6ldNSVH9UCT0qoL7mWZS2tyK6oMiD3PpJni3KS6qHyrd8GjDm2xCYtGLaoWa2TCkkJ9sKNBTgqgtUTTEvxuQpc+I6ocihT4TjNGGETqAI2pbVGoWpYZRWpDpYQpRvVB4wwgBqQGOT3CI2haVwtM7wQV5+BPVD3U3cCUHeGYWcVF9UOigcShiGpSJOgeVCpxsRFPYP13oorZH/Rq4pkODZBxR56DoBKSZWTY0RR2Doocn0sGwNI6oXiiyCSAbAXqgAgccorZEVV9KB2zSQpvGFtUPtdIlSpQoUf+uN0mHL56baUqxAAAAAElFTkSuQmCC" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">IPv6, but no ports</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="John Doe's Avatar">
+        <span>2023-09-10</span>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=IPv6, but no ports&url=http://example.com/2023/09/10/IPv6-but-no-ports/&pic=http://example.com/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=IPv6, but no ports&url=http://example.com/2023/09/10/IPv6-but-no-ports/&via=John Doe" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/2023/09/10/IPv6-but-no-ports/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://example.com/2023/09/10/IPv6-but-no-ports/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://example.com/2023/09/10/IPv6-but-no-ports/&title=frankrank blog" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=frankrank blog&title=frankrank blog&summary=&pics=http://example.com/img/suka-favicon.ico&url=http://example.com/2023/09/10/IPv6-but-no-ports/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://example.com/2023/09/10/IPv6-but-no-ports/&text=frankrank blog" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAABzklEQVR42u3awZLCIBBF0fz/T+tqqqYs6XeJWUBzs7FmVDiLNoTXXK8Fr0uUKFGivqCu4hp++eO9v79Hr3QeUX1QaeJq8GqMEXA4j6hWqNFEn/9LnxkB0hiizkKN3v92k01QUaKqRZTcYEWdiyILKYVWP4BHnhJELY8ixfzE62O7GVFLo2LoMBqgeLAjG9qfUhdRS6OqQkyhBlmk6fii+qDIxGRhJaFZ/PGIaoO6G4rNFngK0UT1QlVFWU1GNhvVYl0WuqitUdXDXWoUpSYSCTdE9UGlgIsGGySIHY0jqhcqFSUt6hS8ph+KqD6oUZBKgg8a6ldNSVH9UCT0qoL7mWZS2tyK6oMiD3PpJni3KS6qHyrd8GjDm2xCYtGLaoWa2TCkkJ9sKNBTgqgtUTTEvxuQpc+I6ocihT4TjNGGETqAI2pbVGoWpYZRWpDpYQpRvVB4wwgBqQGOT3CI2haVwtM7wQV5+BPVD3U3cCUHeGYWcVF9UOigcShiGpSJOgeVCpxsRFPYP13oorZH/Rq4pkODZBxR56DoBKSZWTY0RR2Doocn0sGwNI6oXiiyCSAbAXqgAgccorZEVV9KB2zSQpvGFtUPtdIlSpQoUf+uN0mHL56baUqxAAAAAElFTkSuQmCC" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                    
+                    <article id="post-content">
+                        <p>我整了一段时间才整到IPv6。后面我才发现这玩意对我没用啊？</p>
+<a id="more"></a>
+<p>首先介绍下什么是IPv6。我们立个传统把，每次都问下ChatGPT。</p>
+<s>
+=== 有言在先：赞美river与lingf ===
+</s>
+
+<p>ChatGPT：IPv6（Internet Protocol version 6）是互联网协议的一种版本，它是IPv4（Internet Protocol version 4）的继承者和替代品。IPv6被设计为解决IPv4存在的一些问题，特别是IPv4地址空间的枯竭问题。</p>
+<p>以下是IPv6的一些主要特点和变化：</p>
+<ol>
+<li><p><strong>更大的地址空间：</strong> IPv6的最显著特点是它提供了远远大于IPv4的地址空间。IPv4使用32位地址，允许大约40多亿个唯一的IP地址。而IPv6使用128位地址，允许约340亿亿亿亿个唯一的IP地址，这几乎是无限的地址资源，足以满足未来互联网的需求。</p>
+</li>
+<li><p><strong>简化的地址表示：</strong> IPv6的地址通常以冒号分隔的八组16位十六进制数表示，这样的表示法更加简洁和易读，与IPv4的点分十进制表示法相比，更容易处理和分辨。</p>
+</li>
+<li><p><strong>改进的安全性：</strong> IPv6在设计时考虑了更多的安全性，包括内置IPsec（Internet Protocol Security）支持，这有助于提高通信的机密性和完整性。</p>
+</li>
+<li><p><strong>自动配置：</strong> IPv6引入了一种称为SLAAC（Stateless Address Autoconfiguration）的机制，允许设备在网络上自动获取IPv6地址，简化了网络配置过程。</p>
+</li>
+<li><p><strong>多播和任播：</strong> IPv6增强了多播和任播功能，以提供更有效的数据传输和资源发现。</p>
+</li>
+<li><p><strong>流标签：</strong> IPv6引入了流标签字段，可以用于定义特定数据流的服务质量（QoS）要求。</p>
+</li>
+<li><p><strong>适应移动性：</strong> IPv6在设计上更好地支持移动设备，使其更容易切换到不同的网络。</p>
+</li>
+<li><p><strong>兼容性：</strong> 为了实现平滑的过渡，IPv6设计包括与IPv4的兼容性机制，以便两种协议可以共存和互通。</p>
+</li>
+</ol>
+<p>总之，IPv6是为了满足互联网不断增长的需求而设计的新一代互联网协议，它提供了更大的地址空间、更好的安全性、更好的性能和更多的功能，是未来互联网的基础协议之一。然而，由于IPv4和IPv6之间的过渡仍在进行中，因此在互联网上仍然会同时存在这两种协议。</p>
+<p>（如果你懂的话，可以直接跳过）<br>那所以为什么要用IPv6呢？只因在中国你家用宽带默认套NAT的IPv4，一个大楼、一个小区一个IP。然后你会被分配到一个在交换机里的内网IP。这种方法能很大的缓解IPv4的IP枯竭问题，但是有个问题就是你能访问别人，别人访问不了你了。因为在互联网上通信的只有一个IP，然后一个小区的人都用这个IP，互联网上的人只能访问这个公网ip，但是没法访问在交换机后面的你。如ChatGPT所说，IPv6的地址空间更大，使用128位够用了。</p>
+<p>但是，运营商没有给宽带自动配置IPv6（流量自动配置）。所以，一个晴朗的早上，我开始了行动。首先根据”<a href="https://zhuanlan.zhihu.com/p/601400599%E2%80%9D" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/601400599”</a> 的方法获取到了超密并且开启了telnet。然后经过我一番瞎折腾后我终于整出了个IPv6。（具体过程不是很清楚，就乱调了下）关闭IPv4可以访问部分网站。（ipv6.baidu.com用纯ipv6无法访问，666）</p>
+<p>很好，我能用IPv6正常访问网站。那我就要发挥IPv6的作用了！我先尝试让北京的朋友了下ping我，ping不到？？？然后我尝试关闭了防火墙，ping到了，哦没事了。（<em>曹操盖饭</em>）然后我开了个微型网站。我自己能访问，太好啦！然后让北京的那位朋友访问的时候结果没用？？？我又尝试了下远程访问还是没用？后面我又尝试了minecraft联机，还是没用？？？还是说移动大内网？（我不大信）</p>
+<p>我一直不大理解直到我在水群的时候看到大家在讨论IPv6我也加入了讨论。然后一个群友说有一种公网叫“假公网”就是说给你了公网IP，但是端口全部封死。别人可以ping你，但是就是无法正常访问你的资源。我发现这种情况完全符合我上次的测试。我***的移动。</p>
+<p>emmm，借此我再说说中国的IPv6，大概2014年就有一定宣传了，2018年开始就正式开始推广了。政府和运营商的网站都基本支持IPv6。IPv6发展监测平台说7.5亿用户在用IPv6我是真不信的，毕竟我的IPv6还是折腾出来的。所以应该是各地都在表面完成。网上有很多情况，例如不承认IPv6业务、客服不知道啥是IPv6、IPv6大内网、IPv6“假公网”等各种情况。反正就是希望IPv6发展的更好和整治这些玩意，都用IPv6了还不能直连？<br>（IPv6的墙薄弱（逃）<br>欢迎大家访问我的Telegram频道查看frankrank的日常吐槽和更新推送：<a href="https://t.me/frankrank_blog" target="_blank" rel="noopener">https://t.me/frankrank_blog</a></p>
+
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2023-09-10");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2023-09-10T02:11:17.000Z" itemprop="datePublished">2023-09-10</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+
+    <!-- Next Nav -->
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://example.com">frankrank blog</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
+</html>
