@@ -1,0 +1,8 @@
+@font-face{
+    font-family: 'IBMPlexMono-Italic';
+    src: url('../diy-font/IBMPlexMono-Italic.ttf');   
+}
+​
+body {
+    font-family: 'IBMPlexMono-Italic';
+}
