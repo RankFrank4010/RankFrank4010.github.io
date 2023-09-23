@@ -1,8 +1,8 @@
 @font-face{
-    font-family: 'IBMPlexMono-Italic';
-    src: url('../diy-font/IBMPlexMono-Italic.ttf');   
+    font-family: 'minecraft-ae';
+    src: url('../diy-font/minecraft-ae.ttf');   
 }
 ​
 body {
-    font-family: 'IBMPlexMono-Italic';
+    font-family: 'minecraft-ae';
 }
