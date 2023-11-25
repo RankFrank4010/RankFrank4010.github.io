@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>平板当副屏？Spacedesk体验 | frankrank blog</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="frankrank blog"><meta name="msapplication-starturl" content="http://example.com"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="frankrank blog"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="平板当副屏？Spacedesk体验 | frankrank blog"><meta property="og:site_name" content="frankrank blog"><meta property="og:type" content="article"><meta property="og:url" content="http://example.com/2023/11/25/%E5%B9%B3%E6%9D%BF%E5%BD%93%E5%89%AF%E5%B1%8F%EF%BC%9FSpacedesk%E4%BD%93%E9%AA%8C/"><meta property="og:locale" content="en"><meta name="description" content="背景我不久之前看到了某个B站知名up主的华为宣传广告，讲的一个生态多多多好。可惜我电脑不是华为的，多屏互动就无了。但是我尤其想要里面那个当电脑的扩展屏。网上破解办法我是没成功（平板没有键盘没有触控笔 电脑没有触控 第三方软件尽管我官方的方案是没戏了，但是还有第三方方案。我找到了一篇文章，我康了康，三个软件。一个免费，两个付费。我选择了免费（其实我找过付费的破解版，但是…）这个软件叫Spacedes - RankFrank4010 - frankrank blog"><meta property="article:published_time" content="2023-11-25T14:53:15.000Z"><meta property="article:modified_time" content="2023-11-25T15:12:17.162Z"><meta property="og:updated_time" content="2023-11-25T15:12:17.162Z"><meta property="article:author" content="RankFrank4010"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://example.com/2023/11/25/%E5%B9%B3%E6%9D%BF%E5%BD%93%E5%89%AF%E5%B1%8F%EF%BC%9FSpacedesk%E4%BD%93%E9%AA%8C/">
+
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "http://example.com/2023/11/25/%E5%B9%B3%E6%9D%BF%E5%BD%93%E5%89%AF%E5%B1%8F%EF%BC%9FSpacedesk%E4%BD%93%E9%AA%8C/",
+    "@type": "BlogPosting",
+    "logo": "http://example.com/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://example.com/2023/11/25/%E5%B9%B3%E6%9D%BF%E5%BD%93%E5%89%AF%E5%B1%8F%EF%BC%9FSpacedesk%E4%BD%93%E9%AA%8C/"
+    },
+    "headline": "平板当副屏？Spacedesk体验 | frankrank blog",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://example.com/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2023-11-25T14:53:15.000Z",
+    "dateModified": "2023-11-25T15:12:17.162Z",
+    "author": {
+        "@type": "Person",
+        "name": "RankFrank4010",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://example.com/img/default_avatar.png"
+        },
+        "description": "Just a blog"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "frankrank blog",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://example.com/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "http://example.com/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "",
+    "description": "背景我不久之前看到了某个B站知名up主的华为宣传广告，讲的一个生态多多多好。可惜我电脑不是华为的，多屏互动就无了。但是我尤其想要里面那个当电脑的扩展屏。网上破解办法我是没成功（平板没有键盘没有触控笔 电脑没有触控 第三方软件尽管我官方的方案是没戏了，但是还有第三方方案。我找到了一篇文章，我康了康，三个软件。一个免费，两个付费。我选择了免费（其实我找过付费的破解版，但是…）这个软件叫Spacedes - RankFrank4010 - frankrank blog"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">frankrank blog</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Just a blog
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+    
+    
+        <a href="/2023\09\10\about\index.html" class="navbar-link">about</a>
+    
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">平板当副屏？Spacedesk体验</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="RankFrank4010's Avatar">
+        <span>2023-11-25</span>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=平板当副屏？Spacedesk体验&url=http://example.com/2023/11/25/%E5%B9%B3%E6%9D%BF%E5%BD%93%E5%89%AF%E5%B1%8F%EF%BC%9FSpacedesk%E4%BD%93%E9%AA%8C/&pic=http://example.com/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=平板当副屏？Spacedesk体验&url=http://example.com/2023/11/25/%E5%B9%B3%E6%9D%BF%E5%BD%93%E5%89%AF%E5%B1%8F%EF%BC%9FSpacedesk%E4%BD%93%E9%AA%8C/&via=RankFrank4010" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/2023/11/25/%E5%B9%B3%E6%9D%BF%E5%BD%93%E5%89%AF%E5%B1%8F%EF%BC%9FSpacedesk%E4%BD%93%E9%AA%8C/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://example.com/2023/11/25/%E5%B9%B3%E6%9D%BF%E5%BD%93%E5%89%AF%E5%B1%8F%EF%BC%9FSpacedesk%E4%BD%93%E9%AA%8C/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://example.com/2023/11/25/%E5%B9%B3%E6%9D%BF%E5%BD%93%E5%89%AF%E5%B1%8F%EF%BC%9FSpacedesk%E4%BD%93%E9%AA%8C/&title=frankrank blog" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=frankrank blog&title=frankrank blog&summary=&pics=http://example.com/img/suka-favicon.ico&url=http://example.com/2023/11/25/%E5%B9%B3%E6%9D%BF%E5%BD%93%E5%89%AF%E5%B1%8F%EF%BC%9FSpacedesk%E4%BD%93%E9%AA%8C/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=http://example.com/2023/11/25/%E5%B9%B3%E6%9D%BF%E5%BD%93%E5%89%AF%E5%B1%8F%EF%BC%9FSpacedesk%E4%BD%93%E9%AA%8C/&text=frankrank blog" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADECAAAAADlzdG3AAADIUlEQVR42u3b227jMAxF0fz/T7evQSCfiyI6abHzUqCT2loGZFIk5/HzDz4PECBAgAAxjniIz/N3nr+7+tvlTRa/X11L3UuuCwSIIYRbgLqww1w9gNW9V/eU6wIBYhCxWthqAzrI69+qa6zWkK4LBIhvQ7xuNoe6CpQuAIIA8Y0Id2MFUkFLJZMgQHwa4RK3ZjHuYPTOv4EAcQfCJXaf+nms2gECRIGwRVuRyLWHf3UNtcnfroqDAFH2J5rEbWczXj2MnUIdCBCfQiSLTAvQbmMnB6WoyQICxAGE2qxtgVgtbOcabnODADGFaA5ESfByyZ5q1CcBEQSIaURy4FENwxTYFOSSJj0IEFOIpiCcFoyTza4GWpJCMwgQE4jmIN8UBJIXhQqA6rAEAsSdiKuN6wJQOoCSFgeiIRcQIAYQTbLX3NxtynY4JorYIEAMIHaHbt3NVfLnGptRQRkEiEOInUCVFHuTQ1DalI8SQBAgBhFNIGyaLDuF6bgZDwLEIUQ6GLLTJGySwnagEgSIKYRteAdNF1eQTl4Ox95OIEAcQCRDimmhKznsN0UCCQQBYgCRFo7TJn1aeFYNlfhQBQLEACIZpm2CoSx2Pbr/nG4fEAgQA4im2ZcU1KLETRQmkjWBADGJSIJUMrSYgJIHkAy7gAAxjUiGq1wDxR3026EWlxiCADGJUIeRtGHugmET7FTSBwLEnYh3G/OusJAMeaUPCgSIKUTa+EgOSmrIayuYucICCBADCHdgVwGpXaQKnmnBQr6dQIA4gHAbvB1OUWCXdKZFMxAgphHJ8K3b4MnA186BK97YIEAcRKSbroGkDyHZzPFwLwgQhxBJkSApjiUb2DVjEigIEJOI5Ca7w7gu6LkE9K0pGxAgNhFNIHKJXtrEbxJOBQEBYgLRDCw2zXSbvIVF6ahQAALEYURyOFKDvUmhLAlk9UsEBIhBRNNQdINZp5O/y4EyECA+hGgGSpKBLFdYqwvKIEDcjFABq9mobnglPRiBAHEHommcpN91LwGXMLoGKAgQU4hTxeOmoZgcltTDAQFiCvGXPyBAgAABYuzzC1xoQF02/ShQAAAAAElFTkSuQmCC" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#背景"><span class="post-toc-number">1.</span> <span class="post-toc-text">背景</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#第三方软件"><span class="post-toc-number">2.</span> <span class="post-toc-text">第三方软件</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#效果太差？"><span class="post-toc-number">3.</span> <span class="post-toc-text">效果太差？</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#使用体验"><span class="post-toc-number">4.</span> <span class="post-toc-text">使用体验</span></a></li></ol></div>
+                        
+                    
+                    <article id="post-content">
+                        <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>我不久之前看到了某个B站知名up主的华为宣传广告，讲的一个生态多多多好。可惜我电脑不是华为的，多屏互动就无了。但是我尤其想要里面那个当电脑的扩展屏。<br>网上破解办法我是没成功（<br><del>平板没有键盘没有触控笔 电脑没有触控</del></p>
+<h1 id="第三方软件"><a href="#第三方软件" class="headerlink" title="第三方软件"></a>第三方软件</h1><p>尽管我官方的方案是没戏了，但是还有第三方方案。我找到了一篇文章，我康了康，三个软件。<br>一个免费，两个付费。我选择了免费（<del>其实我找过付费的破解版，但是…</del>）<br>这个软件叫Spacedesk。我就是不理解为什么这个一个普通的免费软件<br><strong>能被墙？？？</strong><br>没逝，通过神秘手段下载就行了。<br>这个软件主推wifi连接，事实上效果很差（~<br>使用数据线连接（别充电器，实在不行PDD买个数据线，最好客服问下）<br>（<strong>可能要开开发者选项和打开USB调试，并且打开传输文件</strong>）<br>然后设置打开USB ANDROID。（苹果应该就是IOS）<br>这样平板上就成为你的第二块屏幕了<br>桌面右键，显示设置。这边建议把平板变成扩展屏，然后设置下缩放倍率（记住选择平板屏幕那个方块）</p>
+<h1 id="效果太差？"><a href="#效果太差？" class="headerlink" title="效果太差？"></a>效果太差？</h1><p>直接使用可能会有屏幕刷新率太低、色彩不好之类的。<br>首先数据线拔掉，选择setting到（应该第三个？）图像管理里把帧率和色彩什么的全部拉满。<br>然后接回来USB充电改为传输文件即可。</p>
+<h1 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h1><p>太爽了。用了就停不下来。使用率100%</p>
+
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2023-11-25");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2023-11-25T14:53:15.000Z" itemprop="datePublished">2023-11-25</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2023/11/01/Microsoft-Autheniticator%E6%8F%90%E7%A4%BA%E9%9C%80%E8%A6%81Google-play%E6%9C%8D%E5%8A%A1%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">Microsoft Autheniticator提示需要Google play服务解决方法</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://example.com">frankrank blog</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
+</html>
